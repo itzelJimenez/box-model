@@ -55,3 +55,11 @@ header{
 	font-size: 35px;
 	letter-spacing: 2px;
 }
+.box-work{
+	display: inline-block;
+	width: 30%;
+}
+#work{
+	text-align: center;
+	padding: 70px 7px;
+}
