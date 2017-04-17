@@ -14,6 +14,7 @@ function prueba(){
 	imagen = this;
 	imagen.setAttribute("class", "vistaPrevia");
 	var botonsito=document.createElement('input');
+	imagen.appendChild(botonsito);
 	botonsito.type="button";
 	botonsito.value="x";
 	botonsito.id="borrar";
@@ -22,7 +23,6 @@ function prueba(){
 		imagen.setAttribute("class", "box-work");
 		imagen.removeChild(borrar);
 	}
-	imagen.appendChild(botonsito);
 }
 
 imagene0.addEventListener("click", prueba)
