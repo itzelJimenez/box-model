@@ -10,11 +10,10 @@ var imagene7= document.getElementsByClassName("box-work")[7];
 var imagene8= document.getElementsByClassName("box-work")[8];
 var imagene9= document.getElementsByClassName("box-work")[9];
 var contenedor=document.getElementBy
-function prueba(){
+function prueba(){	
 	imagen = this;
 	imagen.setAttribute("class", "vistaPrevia");
 	var botonsito=document.createElement('input');
-	imagen.appendChild(botonsito);
 	botonsito.type="button";
 	botonsito.value="x";
 	botonsito.id="borrar";
@@ -23,6 +22,7 @@ function prueba(){
 		imagen.setAttribute("class", "box-work");
 		imagen.removeChild(borrar);
 	}
+	imagen.appendChild(botonsito);
 }
 
 imagene0.addEventListener("click", prueba)
