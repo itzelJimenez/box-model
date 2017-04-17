@@ -12,8 +12,7 @@ var imagene9= document.getElementsByClassName("box-work")[9];
 var contenedor=document.getElementBy
 function prueba(){
 	imagen = this;
-	imagen.style.transform="scale(2)";
-	imagen.style.background="gray";
+	imagen.setAttribute("class", "vistaPrevia");
 	var botonsito=document.createElement('input');
 	imagen.appendChild(botonsito);
 	botonsito.type="button";
@@ -21,8 +20,7 @@ function prueba(){
 	botonsito.id="borrar";
 	botonsito.onclick=function(e){
 		e.stopPropagation()
-		imagen.style.transform=null;
-		imagen.style.background=null;
+		imagen.setAttribute("class", "box-work");
 		imagen.removeChild(borrar);
 	}
 }
