@@ -30,6 +30,9 @@ header{
 	padding: 70px;
 }
 .text-home{
+	font-size: 53px;
+}
+.btn-home{
 	background: #2ECC71;
 	color: #fff;
 	padding: 11px 20px;
